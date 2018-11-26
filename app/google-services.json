@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1072189350685",
+    "firebase_url": "https://greenhouse-3073d.firebaseio.com",
+    "project_id": "greenhouse-3073d",
+    "storage_bucket": "greenhouse-3073d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072189350685:android:9382fdb11ef0fd07",
+        "android_client_info": {
+          "package_name": "thailand.thathiew.pattanapong.greenhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072189350685-568naruf38f8q0saft3mn9dug9hoafoi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thailand.thathiew.pattanapong.greenhouse",
+            "certificate_hash": "dea4c21c8751e022d4f2d3ad7c55a6f1bfa96adb"
+          }
+        },
+        {
+          "client_id": "1072189350685-p9niss9783to026or1qpplrl25q4f0le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwmxZiRdU2zf1m6nrMtmcdV7DdGQZ9sT8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072189350685-p9niss9783to026or1qpplrl25q4f0le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
