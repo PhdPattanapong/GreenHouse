@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         switchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateFirebase(1);
+                updateFirebase(1,"FromMobile");
             }
         });
 
@@ -98,13 +98,40 @@ public class MainActivity extends AppCompatActivity {
        switchOffButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               updateFirebase(0);
+               updateFirebase(0,"FromMobile");
+           }
+       });
+
+       Button on2Button= findViewById(R.id.btnSwitchOn2);
+       on2Button.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               updateFirebase(1,"FromAndriod");
+           }
+       });
+
+       Button off2Button = findViewById(R.id.btnSwitchOFF2);
+       off2Button.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               updateFirebase(0,"FromAndriod");
            }
        });
 
     }   // Main Method
 
-    private void updateFirebase(int i) {
+    private void updateFirebase(int i,String childString) {
+
+        SignalModel signalModel = new SignalModel(i);
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference().child(childString);
+        databaseReference.setValue(signalModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+
+            }
+        });
+
 
     }
 
